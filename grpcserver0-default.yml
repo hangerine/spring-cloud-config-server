@@ -1,0 +1,24 @@
+who:
+  am:
+    i: grpcserver0-dev
+
+#AcpSvcSim:
+jobs:
+  ntasks: 4
+  ncalls: 4
+  inburl: "http://docker-host:19500/registrar/"
+  joburl: "http://docker-host:19300/getJobDescriptor/"
+rests:
+  ctimeout: 5000
+  rtimeout: 3000
+  maxconn: 1024
+  defaultmaxroute: 1024
+  maxroutes:
+    scheme: http
+    host: docker-host
+    port: 19600
+    maxroute: 1024
+grpcs:
+  keepalivetime: 60
+  keepalivetimeout: 60
+  permitkeepalivewithoutcalls: True
