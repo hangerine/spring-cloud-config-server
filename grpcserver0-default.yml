@@ -7,7 +7,7 @@ jobs:
   ntasks: 4
   ncalls: 4
   inburl: "http://docker-host:19500/registrar/"
-  joburl: "http://localhost:19300/getJobDescriptor/"
+  joburl: "http://docker-host:19300/getJobDescriptor/"
 rests:
   ctimeout: 5000
   rtimeout: 3000
